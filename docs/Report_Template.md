@@ -1,44 +1,45 @@
-# The Template and Guideline for the Proposal Development and Final Report
-
-- This document serves as a guide for developing project proposal which will eventually become the proposal and final report.
-- You start with the end in mind and adopt an agile approach:
-  - Making progress continuously towards your goal.
-  - Updating this document continuously along the way.
- 
 ## 1. Title and Author
 
-- Project Title
+- Vehincle Type Detection for Intellignet Transportation Systems & Traffic Management
 - Prepared for UMBC Data Science Master Degree Capstone by Dr Chaojie (Jay) Wang
-- Author Name 
-- Link to the author's GitHub profile
-- Link to the author's LinkedIn progile
+- Rohan Garakurthi
+- https://github.com/Rohan198/UMBC-DATA606-FALL2023-TUESDAY
+- https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit
 - Link to your PowerPoint presentation file
-- Link to your YouTube video 
     
 ## 2. Background
+In today's rapidly evolving world, intelligent transportation systems are essential for the smooth and efficient functioning of our cities and economies. As vehicles of all shapes and sizes traverse our road networks, it becomes increasingly crucial to have automated systems that can classify and identify these vehicles accurately. 
 
-Provide the background information about the chosen topic. 
+This project "Vehicle Type Detection" aims to provide a versatile solution for a multitude of applications by leveraging the power of deep learning and computer vision to analyze images and automatically categorize vehicles into distinct types. 
 
-- What is it about? 
-- Why does it matter? 
-- What are your research questions?
+From improving traffic management and surveillance to enhancing security and supporting autonomous vehicles, the implications of accurate vehicle type detection are vast. We explore the intricacies of identifying vehicles from images, ultimately contributing to smarter, safer, and more efficient transportation systems.
+
+Some practical application where vehicle type detection can be of use:
+●	Road Safety, Traffic Management and Surveillance
+●	Smart Parking Solutions, Toll Collection and Access Control
+●	Vehicle Insurance Risk Assessment
+
+Research Question(s):
+1.	How accurately simple CNN models with less layers can classify this data?
+2.	What parts of images are concentrated by the models during classification?
+3.	How pretrained models based on deep CNN layers compare in classifying vehicle types?
+4.	How different data augmentation techniques can impact the model performance?
+5.	How accurately can different model(s) classify the data?
+
 
 ## 3. Data 
 
 Describe the datasets you are using to answer your research questions.
 
-- Data sources
-- Data size (MB, GB, etc.)
-- Data shape (# of rows and # columns)
-- Time period (for example, 2010 to 2020) if your data are time-bound
-- **What does each row represent?(a patient, a school, a crime, etc.)**
-- Data dictionary
-  - Columns name
-  - Data type
-  - Defition
-  - Potential values (for categorical valuables, what are the categories?)
-- Which variable/column will be your target/label in your ML model?
-- Which variables/columns may be selected as features/predictors for your ML models?
+Link: https://www.kaggle.com/datasets/kaggleashwin/vehicle-type-recognition
+
+●	Number of Images: 400
+●	Number of Vehicles types/classes : 4
+●	Datasize: =~ 200 MB
+
+The dataset comprises a diverse collection of images for four distinct classes (100 of each class): Car, Truck, Bus, and Motorcycle. 
+
+More data collection: While the size of this dataset is small, based on initial results from the model training & evaluation part, I plan to extend the size of the data set with help of web scraping or bringing in the data from other datasets (like Open Images dataset).
 
 ## 4. Exploratory Data Analysis (EDA)
 
