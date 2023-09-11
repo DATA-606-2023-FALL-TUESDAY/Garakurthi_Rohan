@@ -5,7 +5,7 @@
 - Rohan Garakurthi
 - https://github.com/Rohan198/UMBC-DATA606-FALL2023-TUESDAY
 - https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit
-- Link to your PowerPoint presentation file
+- https://docs.google.com/presentation/d/1BZiTZgs6JVvtrBKOSgS4Ys6amEEv9bCi/edit?usp=drive_link&ouid=112142881428497726904&rtpof=true&sd=true
     
 ## 2. Background
 In today's rapidly evolving world, intelligent transportation systems are essential for the smooth and efficient functioning of our cities and economies. As vehicles of all shapes and sizes traverse our road networks, it becomes increasingly crucial to have automated systems that can classify and identify these vehicles accurately. 
