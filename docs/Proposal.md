@@ -161,7 +161,9 @@ TensorFlow and Keras are used to build a simple baseline CNN model using deep ne
 Additional datasets under consideration:
 
 ● https://www.kaggle.com/datasets/dataclusterlabs/indian-vehicle-dataset
+
 ● https://www.kaggle.com/datasets/maciejgronczynski/vehicle-classification-dataset
+
 ● https://www.kaggle.com/datasets/brsdincer/vehicle-detection-image-set
 
 ## 8. References 
