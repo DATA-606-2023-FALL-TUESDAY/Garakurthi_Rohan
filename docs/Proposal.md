@@ -54,7 +54,7 @@ More data collection: While the size of this dataset is small, based on initial 
 - Used pretrained models such as Resnet, Efficient Net, MobileNet & finetune the classification layer for the accurate predictions.
 - Visualized the model's loss and predictions alongside actual/expected predictions.
 
-# Image Data Augmentation
+## Image Data Augmentation
 
 Image Data Augmentation:
 Image augmentation is a technique used to increase the diversity of training examples for computer vision tasks, especially when data size is small. These techniques involve applying various transformations to input images to create new variations of the data without collecting additional real-world samples. This step helps to improve model generalization and reduces overfitting. Below are the explanations of some common image data augmentation techniques/methods:
@@ -81,7 +81,7 @@ Image augmentation is a technique used to increase the diversity of training exa
     
     ○ Adjust the image by adding or subtracting a random value which helps the model adapt to varying lighting conditions, color intensity.
 
-# Image data augmentation using tf layers
+## Image data augmentation using tf layers
 As discussed above, image augmentation techniques can be used individually or in combination to create a wide range of augmented images from a single original image while training a computer vision model. This technique can improve the model's ability to generalize to different conditions and variations in the input data. For this project, TensorFlow image augmentation methods are used to perform various transformations on an input image. Below is the explanation of methods used.
 
 1. tf.image.flip_left_right(image):
@@ -103,11 +103,11 @@ As discussed above, image augmentation techniques can be used individually or in
 
        ○ Function: This method adjusts the brightness of the input image by adding a specified brightness value (0.4 in the code).
 
-# Baseline CNN Model:
+## Baseline CNN Model:
 
 TensorFlow and Keras are used to build a simple baseline CNN model using deep neural networks. The convolutional layers are used to extract hierarchical features from images, and the fully connected layers provide the final classification output. This model can be trained on labeled image datasets to learn to classify images into different classes.
 
-# Data Augmentation:
+## Data Augmentation:
 
 ○ A sequential data_augmentation model is defined to preprocess input images. It applies the following transformations:
 ■ Rescaling: Scales pixel values to the range [0, 1].
@@ -115,7 +115,7 @@ TensorFlow and Keras are used to build a simple baseline CNN model using deep ne
 ■ Random Horizontal and Vertical Flipping: Randomly flips images horizontally and vertically, introducing variations in object orientations.
 ■ Random Rotation: Applies random rotations of up to 0.2 radians to simulate different object orientations.
 
-# Model Architecture:
+## Model Architecture:
 
 ○ The main model is a sequential model that consists of the following layers:
 ■ Data augmentation layer: As described in the above section, a number of image augmentation layers are used.
@@ -125,7 +125,7 @@ TensorFlow and Keras are used to build a simple baseline CNN model using deep ne
 ■ Dense Layer (64 units): A fully connected layer with 64 units and ReLU activation.
 ■ Dense Layer (output): The final fully connected layer with the number of units equal to the number of classes (4 in our case). This layer produces the model's output logits.
 
-# Input Shape & Model Compilation:
+## Input Shape & Model Compilation:
 
 ○ The model's input shape is specified as (None, 224, 224, 3), indicating that it expects input images with a size of 224x224 pixels and 3 color channels (RGB).
 
@@ -137,7 +137,7 @@ TensorFlow and Keras are used to build a simple baseline CNN model using deep ne
 
 ■ Optimizer: Adam optimizer
 
-# Next Steps: Improve dataset quality by extending data & classes
+## Next Steps: Improve dataset quality by extending data & classes
 
 ● Add more images into 4 existing classes of datasets to improve the quality of the dataset and the machine learning model.
 
@@ -158,7 +158,7 @@ TensorFlow and Keras are used to build a simple baseline CNN model using deep ne
 - Lessons learned 
 - Talk about future research direction
 
-# Additional datasets under consideration:
+## Additional datasets under consideration:
 
 ● https://www.kaggle.com/datasets/dataclusterlabs/indian-vehicle-dataset
 
