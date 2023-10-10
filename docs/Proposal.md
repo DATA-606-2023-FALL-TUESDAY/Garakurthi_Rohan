@@ -46,25 +46,18 @@ More data collection: While the size of this dataset is small, based on initial 
 - Used tensorflow image module to augment the input data by various techniques such as decolorizing, sharpening, rotating, resizing & cropping.
 - Visualized the feature maps from the CNN layers (after training) to determine based on which parts of images the models are predicting the vehicle types.
 
-# 5. Model Training 
-
-- Used matplotlib to load and view the data samples for each class. Split the dataset into training and validation datasets for evaluating the model.
-- Developed deep learning architectures based on CNN’s to classify the vehicle type images.
-- Experimented with different weight initialization techniques & normalization layers.
-- Used pretrained models such as Resnet, Efficient Net, MobileNet & finetune the classification layer for the accurate predictions.
-- Visualized the model's loss and predictions alongside actual/expected predictions.
-
 ## Image Data Augmentation
 
-Image Data Augmentation:
 Image augmentation is a technique used to increase the diversity of training examples for computer vision tasks, especially when data size is small. These techniques involve applying various transformations to input images to create new variations of the data without collecting additional real-world samples. This step helps to improve model generalization and reduces overfitting. Below are the explanations of some common image data augmentation techniques/methods:
 
 1. Rotation:
 
     ○ Rotate the image by a certain angle (e.g., 90 degrees, 180 degrees) to introduce variability in object orientations, making the model more robust to rotated objects.
+
 2. Vertical or Horizontal Flipping:
 
     ○ Flip the image horizontally or vertically, so that the model learns invariant features from left-to-right or top-to-bottom orientations.
+
 3. Random Cropping and Resize:
 
     ○ Crop a portion of the image and resize it to the original size. This helps the model to focus on different regions of the image while simulating different viewpoints or zoom levels.
@@ -87,21 +80,30 @@ As discussed above, image augmentation techniques can be used individually or in
 1. tf.image.flip_left_right(image):
 
        ○ This method horizontally flips (mirrors) the input image from left to right.
-3. tf.image.rgb_to_grayscale(image):
+2. tf.image.rgb_to_grayscale(image):
 
        ○ This method converts a color image (RGB) into grayscale, resulting in a single-channel image. This method can be useful for certain    tasks such as edge detection or reducing the computational cost of processing.
-5. tf.image.central_crop(image, central_fraction=0.5):
+3. tf.image.central_crop(image, central_fraction=0.5):
 
        ○ This method crops the central portion of the input image based on the specified central fraction. In the code, a central fraction of 0.5 is used to keep the central 50% of the image.
-7. tf.image.rot90(image):
+
+4. tf.image.rot90(image):
 
        ○ Function: This method rotates the input image by 90 degrees counterclockwise.
-9. tf.image.adjust_saturation(image, 3):
+5. tf.image.adjust_saturation(image, 3):
 
        ○ Function: This method adjusts the saturation of the input image. In the code, it increases the saturation by a factor of 3.
-11. tf.image.adjust_brightness(image, 0.4):
+6. tf.image.adjust_brightness(image, 0.4):
 
        ○ Function: This method adjusts the brightness of the input image by adding a specified brightness value (0.4 in the code).
+
+# 5. Model Training 
+
+- Used matplotlib to load and view the data samples for each class. Split the dataset into training and validation datasets for evaluating the model.
+- Developed deep learning architectures based on CNN’s to classify the vehicle type images.
+- Experimented with different weight initialization techniques & normalization layers.
+- Used pretrained models such as Resnet, Efficient Net, MobileNet & finetune the classification layer for the accurate predictions.
+- Visualized the model's loss and predictions alongside actual/expected predictions.
 
 ## Baseline CNN Model:
 
