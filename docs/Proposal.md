@@ -115,16 +115,23 @@ TensorFlow and Keras are used to build a simple baseline CNN model using deep ne
 # Input Shape & Model Compilation:
 
 ○ The model's input shape is specified as (None, 224, 224, 3), indicating that it expects input images with a size of 224x224 pixels and 3 color channels (RGB).
+
 ○ The model is compiled with the following settings:
+
 ■ Loss Function: Sparse Categorical Cross-Entropy, suitable for multi-class classification tasks.
+
 ■ Metrics: Accuracy is monitored during training to evaluate model performance.
+
 ■ Optimizer: Adam optimizer
 
 # Next Steps: Improve dataset quality by extending data & classes
 
 ● Add more images into 4 existing classes of datasets to improve the quality of the dataset and the machine learning model.
+
 ● Extend classes available by finding more data, to add other vehicle types like airplane & train.
+
 ● Add some random non-vehicle images to a class named "non-vehicle" so that models know when a vehicle is not present in the given input.
+
 ● Compare the performance of different pretrained models.
 
 ## 6. Application of the Trained Models
