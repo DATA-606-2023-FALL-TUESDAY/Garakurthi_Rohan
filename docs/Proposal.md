@@ -1,4 +1,4 @@
-## 1. Title and Author
+# 1. Title and Author
 
 - Vehicle Type Detection for Intellignet Transportation Systems & Traffic Management
 - Rohan Garakurthi
@@ -6,7 +6,7 @@
 - https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit
 - https://docs.google.com/presentation/d/1BZiTZgs6JVvtrBKOSgS4Ys6amEEv9bCi/edit?usp=drive_link&ouid=112142881428497726904&rtpof=true&sd=true
     
-## 2. Background
+# 2. Background
 In today's rapidly evolving world, intelligent transportation systems are essential for the smooth and efficient functioning of our cities and economies. As vehicles of all shapes and sizes traverse our road networks, it becomes increasingly crucial to have automated systems that can classify and identify these vehicles accurately. 
 
 This project "Vehicle Type Detection" aims to provide a versatile solution for a multitude of applications by leveraging the power of deep learning and computer vision to analyze images and automatically categorize vehicles into distinct types. 
@@ -26,7 +26,7 @@ Research Question(s):
 5.	How accurately can different model(s) classify the data?
 
 
-## 3. Data 
+# 3. Data 
 
 Describe the datasets you are using to answer your research questions.
 
@@ -40,13 +40,13 @@ The dataset comprises a diverse collection of images for four distinct classes (
 
 More data collection: While the size of this dataset is small, based on initial results from the model training & evaluation part, I plan to extend the size of the data set with help of web scraping or bringing in the data from other datasets (like Open Images dataset).
 
-## 4. Exploratory Data Analysis (EDA)
+# 4. Exploratory Data Analysis (EDA)
 
 - Used matplotlib to load and view the data samples for each class.
 - Used tensorflow image module to augment the input data by various techniques such as decolorizing, sharpening, rotating, resizing & cropping.
 - Visualized the feature maps from the CNN layers (after training) to determine based on which parts of images the models are predicting the vehicle types.
 
-## 5. Model Training 
+# 5. Model Training 
 
 - Used matplotlib to load and view the data samples for each class. Split the dataset into training and validation datasets for evaluating the model.
 - Developed deep learning architectures based on CNN’s to classify the vehicle type images.
@@ -147,11 +147,11 @@ TensorFlow and Keras are used to build a simple baseline CNN model using deep ne
 
 ● Compare the performance of different pretrained models.
 
-## 6. Application of the Trained Models
+# 6. Application of the Trained Models
 
 - I plan to use streamlit to build a web app to upload vehicle images and classify the vehicle type.
  
-## 7. Conclusion
+# 7. Conclusion
 
 - Summarize your work and its potetial application
 - Point out the limitations of your work
@@ -166,7 +166,7 @@ TensorFlow and Keras are used to build a simple baseline CNN model using deep ne
 
 ● https://www.kaggle.com/datasets/brsdincer/vehicle-detection-image-set
 
-## 8. References 
+# 8. References 
 
 - Data Augmentation using Tensorflow, https://www.tensorflow.org/tutorials/images/data_augmentation
 - Image plotting with matplotlib, https://matplotlib.org/stable/tutorials/images.html
