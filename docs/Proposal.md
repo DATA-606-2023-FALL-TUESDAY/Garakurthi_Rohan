@@ -60,35 +60,48 @@ Image Data Augmentation:
 Image augmentation is a technique used to increase the diversity of training examples for computer vision tasks, especially when data size is small. These techniques involve applying various transformations to input images to create new variations of the data without collecting additional real-world samples. This step helps to improve model generalization and reduces overfitting. Below are the explanations of some common image data augmentation techniques/methods:
 
 1. Rotation:
-     ○ Rotate the image by a certain angle (e.g., 90 degrees, 180 degrees) to        iIntroduce variability in object orientations, making the model more robust        to rotated objects.
+
+    ○ Rotate the image by a certain angle (e.g., 90 degrees, 180 degrees) to introduce variability in object orientations, making the model more robust to rotated objects.
 2. Vertical or Horizontal Flipping:
-     ○ Flip the image horizontally or vertically, so that the model learns invariant      features from left-to-right or top-to-bottom orientations.
+
+    ○ Flip the image horizontally or vertically, so that the model learns invariant features from left-to-right or top-to-bottom orientations.
 3. Random Cropping and Resize:
-     ○ Crop a portion of the image and resize it to the original size. This helps      the model to focus on different regions of the image while simulating different      viewpoints or zoom levels.
+
+    ○ Crop a portion of the image and resize it to the original size. This helps the model to focus on different regions of the image while simulating different viewpoints or zoom levels.
 4. Scaling and Zooming:
-     ○ Randomly scale the image up or down, providing variations in the size of      objects, helping the model generalize to different object sizes.
+
+    ○ Randomly scale the image up or down, providing variations in the size of objects, helping the model generalize to different object sizes.
 5. Noise Addition:
-     ○ Add random noise (e.g. Gaussian noise) to the image to simulate noise in real-     world images, improving the model's ability to handle noisy data.
+
+    ○ Add random noise (e.g. Gaussian noise) to the image to simulate noise in real-world images, improving the model's ability to handle noisy data.
 6. Blur:
-     ○ Apply various blur filters (e.g., Gaussian blur, motion blur) to the image to      reduce sharpness, making the model more robust to images with different levels      of clarity.
+
+    ○ Apply various blur filters (e.g., Gaussian blur, motion blur) to the image to reduce sharpness, making the model more robust to images with different levels of clarity.
 7. Brightness/Contrast/Saturation Adjustment:
-     ○ Adjust the image by adding or subtracting a random value which helps the      model adapt to varying lighting conditions, color intensity.
+    
+    ○ Adjust the image by adding or subtracting a random value which helps the model adapt to varying lighting conditions, color intensity.
 
 # Image data augmentation using tf layers
 As discussed above, image augmentation techniques can be used individually or in combination to create a wide range of augmented images from a single original image while training a computer vision model. This technique can improve the model's ability to generalize to different conditions and variations in the input data. For this project, TensorFlow image augmentation methods are used to perform various transformations on an input image. Below is the explanation of methods used.
 
 1. tf.image.flip_left_right(image):
-       ○ This method horizontally flips (mirrors) the input image from left to        right.
-2. tf.image.rgb_to_grayscale(image):
-       ○ This method converts a color image (RGB) into grayscale, resulting in a        single-channel image. This method can be useful for certain tasks such as        edge detection or reducing the computational cost of processing.
-3. tf.image.central_crop(image, central_fraction=0.5):
-       ○ This method crops the central portion of the input image based on the        specified central fraction. In the code, a central fraction of 0.5 is used        to keep the central 50% of the image.
-4. tf.image.rot90(image):
-       ○ Function: This method rotates the input image by 90 degrees        counterclockwise.
-5. tf.image.adjust_saturation(image, 3):
-       ○ Function: This method adjusts the saturation of the input image. In the        code, it increases the saturation by a factor of 3.
-6. tf.image.adjust_brightness(image, 0.4):
-       ○ Function: This method adjusts the brightness of the input image by adding        a specified brightness value (0.4 in the code).
+
+       ○ This method horizontally flips (mirrors) the input image from left to right.
+3. tf.image.rgb_to_grayscale(image):
+
+       ○ This method converts a color image (RGB) into grayscale, resulting in a single-channel image. This method can be useful for certain    tasks such as edge detection or reducing the computational cost of processing.
+5. tf.image.central_crop(image, central_fraction=0.5):
+
+       ○ This method crops the central portion of the input image based on the specified central fraction. In the code, a central fraction of 0.5 is used to keep the central 50% of the image.
+7. tf.image.rot90(image):
+
+       ○ Function: This method rotates the input image by 90 degrees counterclockwise.
+9. tf.image.adjust_saturation(image, 3):
+
+       ○ Function: This method adjusts the saturation of the input image. In the code, it increases the saturation by a factor of 3.
+11. tf.image.adjust_brightness(image, 0.4):
+
+       ○ Function: This method adjusts the brightness of the input image by adding a specified brightness value (0.4 in the code).
 
 # Baseline CNN Model:
 
