@@ -28,7 +28,6 @@ Research Question(s):
 
 # 3. Data 
 
-Describe the datasets you are using to answer your research questions.
 
 Link: https://www.kaggle.com/datasets/kaggleashwin/vehicle-type-recognition
 
