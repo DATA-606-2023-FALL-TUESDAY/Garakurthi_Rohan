@@ -159,12 +159,12 @@ TensorFlow and Keras are used to build a simple baseline CNN model using deep ne
  
 # 6. Conclusion
 
-- We conducted an in-depth analysis, starting with simple Convolutional Neural Network (CNN) models and progressing to fine-tuning pretrained models like ResNet, EfficientNet, MobileNet, and more. The models were trained and evaluated on a dataset of vehicle images, with data splits and model creation carefully designed for the task.
+- I conducted an in-depth analysis, starting with simple Convolutional Neural Network (CNN) models and progressing to fine-tuning pretrained models like ResNet, EfficientNet, MobileNet, and more. The models were trained and evaluated on a dataset of vehicle images, with data splits and model creation carefully designed for the task.
 
-- Our results indicate that image augmentation techniques significantly improved model performance, although some inconsistency in accuracy was observed. The simple CNN models, with image augmentation, achieved an average accuracy of around 40%, showing the potential for improvement.
+- My results indicate that image augmentation techniques significantly improved model performance, although some inconsistency in accuracy was observed. The simple CNN models, with image augmentation, achieved an average accuracy of around 40%, showing the potential for improvement.
 Fine-tuning pretrained models yielded promising results, with models like NasNet Mobile achieving an impressive accuracy of around 94% on the test data. Other models, including DenseNet and MobileNet, also reached accuracy in the low 90s, demonstrating their effectiveness.
 
-- In the feature map visualization, we observed that the models learned to detect edges of objects in the images and focused on specific pixels and parts in deeper layers, providing insights into their decision-making process.
+- In the feature map visualization, I observed that the models learned to detect edges of objects in the images and focused on specific pixels and parts in deeper layers, providing insights into their decision-making process.
 
 - In conclusion, this project lays a successful foundation for advanced vehicle type detection systems and opens avenues for further research and practical implementation in intelligent transportation systems and related fields. The importance of accurate vehicle type detection extends to various applications, including road safety, traffic management, surveillance, smart parking solutions, toll collection, access control, and vehicle insurance risk assessment.
 
