@@ -1,12 +1,12 @@
-# 1. Title and Author
-
-- Vehicle Type Detection for Intelligent Transportation Systems & Traffic Management
-- Rohan Garakurthi
-- https://github.com/Rohan198/UMBC-DATA606-FALL2023-TUESDAY
-- https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit
-- https://docs.google.com/presentation/d/1BZiTZgs6JVvtrBKOSgS4Ys6amEEv9bCi/edit?usp=drive_link&ouid=112142881428497726904&rtpof=true&sd=true
+## Vehicle Type Detection for Intelligent Transportation Systems & Traffic Management
+                                                        Name: Rohan Garakurthi, Semester : FALL 2023
+ 
+Github : https://github.com/Rohan198/UMBC-DATA606-FALL2023-TUESDAY
+Linkedin : https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit
+Powerpoint : https://docs.google.com/presentation/d/1BZiTZgs6JVvtrBKOSgS4Ys6amEEv9bCi/edit?usp=drive_link&ouid=112142881428497726904&rtpof=true&sd=true
+Youtube : 
     
-# 2. Background
+# 1. Background
 In today's rapidly evolving world, intelligent transportation systems are essential for the smooth and efficient functioning of our cities and economies. As vehicles of all shapes and sizes traverse our road networks, it becomes increasingly crucial to have automated systems that can classify and identify these vehicles accurately. 
 
 This project "Vehicle Type Detection" aims to provide a versatile solution for a multitude of applications by leveraging the power of deep learning and computer vision to analyze images and automatically categorize vehicles into distinct types. 
@@ -26,7 +26,7 @@ Research Question(s):
 5.	How accurately can different model(s) classify the data?
 
 
-# 3. Data 
+# 2. Data 
 
 
 Link: https://www.kaggle.com/datasets/kaggleashwin/vehicle-type-recognition
@@ -39,7 +39,7 @@ The dataset comprises a diverse collection of images for four distinct classes (
 
 More data collection: While the size of this dataset is small, based on initial results from the model training & evaluation part, I plan to extend the size of the data set with help of web scraping or bringing in the data from other datasets (like Open Images dataset).
 
-# 4. Exploratory Data Analysis (EDA)
+# 3. Exploratory Data Analysis (EDA)
 
 - Used matplotlib to load and view the data samples for each class.
 - Used tensorflow image module to augment the input data by various techniques such as decolorizing, sharpening, rotating, resizing & cropping.
@@ -65,10 +65,10 @@ Image augmentation is a technique used to increase the diversity of training exa
     ○ Randomly scale the image up or down, providing variations in the size of objects, helping the model generalize to different object sizes.
 5. Noise Addition:
 
-    ○ Add random noise (e.g. Gaussian noise) to the image to simulate noise in real-world images, improving the model's ability to handle noisy data.
+    ○ Added random noise (e.g. Gaussian noise) to the image to simulate noise in real-world images, improving the model's ability to handle noisy data.
 6. Blur:
 
-    ○ Apply various blur filters (e.g., Gaussian blur, motion blur) to the image to reduce sharpness, making the model more robust to images with different levels of clarity.
+    ○ Applied various blur filters (e.g., Gaussian blur, motion blur) to the image to reduce sharpness, making the model more robust to images with different levels of clarity.
 7. Brightness/Contrast/Saturation Adjustment:
     
     ○ Adjust the image by adding or subtracting a random value which helps the model adapt to varying lighting conditions, color intensity.
@@ -96,7 +96,7 @@ As discussed above, image augmentation techniques can be used individually or in
 
        ○ Function: This method adjusts the brightness of the input image by adding a specified brightness value (0.4 in the code).
    
-# 5. Model Training 
+# 4. Model Training 
 
 - Used matplotlib to load and view the data samples for each class. Split the dataset into training and validation datasets for evaluating the model.
 - Developed deep learning architectures based on CNN’s to classify the vehicle type images.
@@ -140,24 +140,39 @@ TensorFlow and Keras are used to build a simple baseline CNN model using deep ne
 
 ## Next Steps: Improve dataset quality by extending data & classes
 
-● Add more images into 4 existing classes of datasets to improve the quality of the dataset and the machine learning model.
+● Added more images into 4 existing classes of datasets to improve the quality of the dataset and the machine learning model.
 
-● Extend classes available by finding more data, to add other vehicle types like airplane & train.
+● Extended classes available by finding more data, to add other vehicle types like airplane & train.
 
-● Add some random non-vehicle images to a class named "non-vehicle" so that models know when a vehicle is not present in the given input.
+● Added some random non-vehicle images to a class named "non-vehicle" so that models know when a vehicle is not present in the given input.
 
-● Compare the performance of different pretrained models.
+● Compared the performance of different pretrained models.
 
-# 6. Application of the Trained Models
+# 5. Application of the Trained Models
 
-- I plan to use streamlit to build a web app to upload vehicle images and classify the vehicle type.
+- Created a python web app using the streamlit framework. Users can upload images using the UI and the app returns the top 3 vehicle types/classes along with their probabilities.
+- Ran the command `python3 -m streamlit run app.py` to start the app & visit the localhost:8501 url on any browser to access it.
+
  
-# 7. Conclusion
+# 6. Conclusion
 
-- Summarize your work and its potetial application
-- Point out the limitations of your work
-- Lessons learned 
-- Talk about future research direction
+- We conducted an in-depth analysis, starting with simple Convolutional Neural Network (CNN) models and progressing to fine-tuning pretrained models like ResNet, EfficientNet, MobileNet, and more. The models were trained and evaluated on a dataset of vehicle images, with data splits and model creation carefully designed for the task.
+
+- Our results indicate that image augmentation techniques significantly improved model performance, although some inconsistency in accuracy was observed. The simple CNN models, with image augmentation, achieved an average accuracy of around 40%, showing the potential for improvement.
+Fine-tuning pretrained models yielded promising results, with models like NasNet Mobile achieving an impressive accuracy of around 94% on the test data. Other models, including DenseNet and MobileNet, also reached accuracy in the low 90s, demonstrating their effectiveness.
+
+- In the feature map visualization, we observed that the models learned to detect edges of objects in the images and focused on specific pixels and parts in deeper layers, providing insights into their decision-making process.
+
+- In conclusion, this project lays a successful foundation for advanced vehicle type detection systems and opens avenues for further research and practical implementation in intelligent transportation systems and related fields. The importance of accurate vehicle type detection extends to various applications, including road safety, traffic management, surveillance, smart parking solutions, toll collection, access control, and vehicle insurance risk assessment.
+
+## Future Research Direction
+
+- Object Detection and Masking: Incorporating object detection techniques, such as YOLO (You Only Look Once) or Faster R-CNN, along with image masking, can enhance the project's capabilities. This approach allows for not only identifying the type of vehicles but also precisely localizing and extracting them within the images. By implementing these techniques, we can move beyond classification to provide more comprehensive solutions for vehicle detection and extraction in real-world scenarios, further contributing to intelligent transportation systems and related domains.
+
+- Data Expansion: Expanding the dataset with diverse and challenging vehicle images can further enrich the model's ability to accurately identify various vehicle types in real-world conditions.
+Real-World Applications: Implementing the developed model in real-world scenarios for traffic management, surveillance, and other applications can be the next step, providing valuable insights and enhancing transportation systems.
+
+- Ensemble Learning: Combining the predictions of multiple models, including different pretrained models, through ensemble learning techniques could potentially improve overall performance.
 
 ## Additional datasets under consideration:
 
@@ -167,7 +182,23 @@ TensorFlow and Keras are used to build a simple baseline CNN model using deep ne
 
 ● https://www.kaggle.com/datasets/brsdincer/vehicle-detection-image-set
 
-# 8. References 
+# 7. References 
 
 - Data Augmentation using Tensorflow, https://www.tensorflow.org/tutorials/images/data_augmentation
+
 - Image plotting with matplotlib, https://matplotlib.org/stable/tutorials/images.html
+
+- Data Augmentation using Tensorflow, https://www.tensorflow.org/tutorials/images/data_augmentation
+  
+- Image plotting with matplotlib, https://matplotlib.org/stable/tutorials/images.html
+  
+- Indian vehicles dataset: https://www.kaggle.com/datasets/dataclusterlabs/indian-vehicle-dataset
+  
+- Vehicle classification data used to get data for trains/plans: https://www.kaggle.com/datasets/maciejgronczynski/vehicle-classification-dataset
+  
+- Bike images data: https://www.kaggle.com/datasets/zwartfreak/bike-images/
+  
+- Mini Imagenet dataset used to add non-vehicle class: https://www.kaggle.com/datasets/deeptrial/miniimagenet/
+
+- Visualizing feature maps of the CNN models: https://machinelearningmastery.com/how-to-visualize-filters-and-feature-maps-in-convolutional-neural-networks/
+
