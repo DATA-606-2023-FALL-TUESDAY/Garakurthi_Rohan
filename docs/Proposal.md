@@ -1,6 +1,6 @@
 # 1. Title and Author
 
-- Vehicle Type Detection for Intellignet Transportation Systems & Traffic Management
+- Vehicle Type Detection for Intelligent Transportation Systems & Traffic Management
 - Rohan Garakurthi
 - https://github.com/Rohan198/UMBC-DATA606-FALL2023-TUESDAY
 - https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit
