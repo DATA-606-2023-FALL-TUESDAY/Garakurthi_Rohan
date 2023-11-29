@@ -2,8 +2,11 @@
                                                         Name: Rohan Garakurthi, Semester : FALL 2023
  
 Github : https://github.com/Rohan198/UMBC-DATA606-FALL2023-TUESDAY
+
 Linkedin : https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit
+
 Powerpoint : https://docs.google.com/presentation/d/1BZiTZgs6JVvtrBKOSgS4Ys6amEEv9bCi/edit?usp=drive_link&ouid=112142881428497726904&rtpof=true&sd=true
+
 Youtube : 
     
 # 1. Background
