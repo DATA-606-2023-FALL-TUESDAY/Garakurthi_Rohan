@@ -95,7 +95,7 @@ As discussed above, image augmentation techniques can be used individually or in
 6. tf.image.adjust_brightness(image, 0.4):
 
        ○ Function: This method adjusts the brightness of the input image by adding a specified brightness value (0.4 in the code).
-
+   
 # 5. Model Training 
 
 - Used matplotlib to load and view the data samples for each class. Split the dataset into training and validation datasets for evaluating the model.
