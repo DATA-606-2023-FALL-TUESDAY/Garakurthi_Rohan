@@ -133,6 +133,11 @@ TensorFlow and Keras are used to build a simple baseline CNN model using deep ne
 ■ Dense Layer (64 units): A fully connected layer with 64 units and ReLU activation.
 ■ Dense Layer (output): The final fully connected layer with the number of units equal to the number of classes (4 in our case). This layer produces the model's output logits.
 
+<img width="552" alt="Screenshot 2023-12-10 at 12 56 56 PM" src="https://github.com/DATA-606-2023-FALL-TUESDAY/Garakurthi_Rohan/assets/85558952/e9723ae1-8b80-4eea-a58d-375f5094388d">
+
+<img width="505" alt="Screenshot 2023-12-10 at 12 57 03 PM" src="https://github.com/DATA-606-2023-FALL-TUESDAY/Garakurthi_Rohan/assets/85558952/85dcd981-b795-4cb3-81b6-f3cf6705ede6">
+The above graphs show the relationship between epoch and loss function, and epoch and accuracy.
+
 ## Input Shape & Model Compilation:
 
 ○ The model's input shape is specified as (None, 224, 224, 3), indicating that it expects input images with a size of 224x224 pixels and 3 color channels (RGB).
@@ -149,11 +154,32 @@ TensorFlow and Keras are used to build a simple baseline CNN model using deep ne
 
 ● Added more images into 4 existing classes of datasets to improve the quality of the dataset and the machine learning model.
 
+<img width="893" alt="Screenshot 2023-12-10 at 12 57 09 PM" src="https://github.com/DATA-606-2023-FALL-TUESDAY/Garakurthi_Rohan/assets/85558952/8c30e318-46ff-465e-a715-b138d7cb6f75">
+
 ● Extended classes available by finding more data, to add other vehicle types like airplane & train.
 
 ● Added some random non-vehicle images to a class named "non-vehicle" so that models know when a vehicle is not present in the given input.
 
+<img width="1036" alt="Screenshot 2023-12-10 at 12 56 17 PM" src="https://github.com/DATA-606-2023-FALL-TUESDAY/Garakurthi_Rohan/assets/85558952/ff70eafe-7414-4ad8-b1e5-22157ff8d890">
+The above image shows the correctly classified images and incorrectly classified images.
+
 ● Compared the performance of different pretrained models.
+
+<img width="394" alt="Screenshot 2023-12-10 at 12 57 38 PM" src="https://github.com/DATA-606-2023-FALL-TUESDAY/Garakurthi_Rohan/assets/85558952/a961f464-72a8-42df-82a2-a83f00b8eb53">
+
+The above image shows the models that I have trained.
+
+<img width="941" alt="Screenshot 2023-12-10 at 12 57 46 PM" src="https://github.com/DATA-606-2023-FALL-TUESDAY/Garakurthi_Rohan/assets/85558952/d2bc8ba5-5ade-4f74-a662-cb0b9dc9afca">
+
+The above image shows the epoch of NASnetMobile model which had the best accuracy.
+
+<img width="950" alt="Screenshot 2023-12-10 at 12 55 56 PM" src="https://github.com/DATA-606-2023-FALL-TUESDAY/Garakurthi_Rohan/assets/85558952/49bff67d-8475-4589-9e03-69eb19080f0f">
+
+The above image shows the confusion matrix of all the models.
+
+<img width="943" alt="Screenshot 2023-12-10 at 12 55 40 PM" src="https://github.com/DATA-606-2023-FALL-TUESDAY/Garakurthi_Rohan/assets/85558952/9508da67-45a1-4fd1-bf9b-0ffd6c06f64d">
+
+The above image shows the graph between Epoch/Loss function and Epoch/Accuracy of all the models.
 
 # 5. Application of the Trained Models
 
