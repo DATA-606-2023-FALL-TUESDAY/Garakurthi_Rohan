@@ -1,5 +1,5 @@
 ## Vehicle Type Detection for Intelligent Transportation Systems & Traffic Management
-                                                        Name: Rohan Garakurthi, Semester : FALL 2023
+  Name: Rohan Garakurthi, Semester : FALL 2023
  
 Github : https://github.com/Rohan198/UMBC-DATA606-FALL2023-TUESDAY
 
