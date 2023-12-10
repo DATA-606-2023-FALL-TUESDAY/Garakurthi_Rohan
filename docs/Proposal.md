@@ -100,6 +100,8 @@ As discussed above, image augmentation techniques can be used individually or in
        ○ Function: This method adjusts the brightness of the input image by adding a specified brightness value (0.4 in the code).
 
 
+<img width="580" alt="Screenshot 2023-11-28 at 9 13 29 PM" src="https://github.com/DATA-606-2023-FALL-TUESDAY/Garakurthi_Rohan/assets/85558952/9c29421a-9710-415f-b764-aa828550067e">
+
 
 # 4. Model Training 
 
