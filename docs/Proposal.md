@@ -160,7 +160,12 @@ TensorFlow and Keras are used to build a simple baseline CNN model using deep ne
 - Created a python web app using the streamlit framework. Users can upload images using the UI and the app returns the top 3 vehicle types/classes along with their probabilities.
 - Ran the command `python3 -m streamlit run app.py` to start the app & visit the localhost:8501 url on any browser to access it.
 
- 
+<img width="1512" alt="Screenshot 2023-12-10 at 12 47 17 PM" src="https://github.com/DATA-606-2023-FALL-TUESDAY/Garakurthi_Rohan/assets/85558952/e39944c8-94dd-4a9a-827e-1540a302849c">
+
+<img width="1512" alt="Screenshot 2023-12-10 at 12 48 21 PM" src="https://github.com/DATA-606-2023-FALL-TUESDAY/Garakurthi_Rohan/assets/85558952/d49b01af-06e3-46bc-a29f-46ea7aea1356">
+
+<img width="1512" alt="Screenshot 2023-12-10 at 12 49 00 PM" src="https://github.com/DATA-606-2023-FALL-TUESDAY/Garakurthi_Rohan/assets/85558952/99f68414-bd91-4685-b7c8-4c60ec665999">
+
 # 6. Conclusion
 
 - I conducted an in-depth analysis, starting with simple Convolutional Neural Network (CNN) models and progressing to fine-tuning pretrained models like ResNet, EfficientNet, MobileNet, and more. The models were trained and evaluated on a dataset of vehicle images, with data splits and model creation carefully designed for the task.
